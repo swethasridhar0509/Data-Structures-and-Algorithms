@@ -21,6 +21,9 @@ class Array:
         self.array = [None] * capacity
 
     def traverse(self):
+        if self.isEmpty():
+            return 'Array is empty'
+        
         for i in range(self.curr_size):
             print(self.array[i])
 
@@ -74,6 +77,9 @@ class Array:
     
     def isFull(self):
         return self.curr_size == self.capacity
+    
+    def isEmpty(self):
+        return self.curr_size == 0
     
     def valid_index(self, index, action_id = 0):
 
