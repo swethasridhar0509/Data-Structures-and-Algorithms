@@ -1,0 +1,9 @@
+if curr.next:
+       ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'next' in short
+
+Reason: Because the head was None. Handle this case first.
+
+Why while curr is not None? during Traversing Linked List
+
+Reason: curr.next will miss the last node.
